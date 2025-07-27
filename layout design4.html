@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url(3.jpg);
+            background-size: cover;
+
+        }
+        .mainContainer{
+            height: 50vh;
+            width: 60vw;
+            background-color: grey;
+            margin-left:20vw;
+            margin-top: 25vh;
+        }
+
+        .left{
+            height: 50vh;
+            width: 40vw;
+            background-color: bisque;
+            float: left;
+            background-image: url(3.jpg);
+            background-size: cover;
+        }
+        .right{
+            height: 50vh;
+            width: 20vw;
+            background-color: rgb(161, 146, 127);
+            float: left;
+            background-image: url(5.jpg);
+            background-size: cover;
+        }
+        .circle{
+            height: 15vh;
+            width: 15vh;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 66vw;    
+            margin-top: -60vh;
+
+            position: absolute;
+            z-index: 1;
+            
+            border: 2vh;
+            border-color: white;
+            border-style: solid;
+            background-image: url(5.jpg);
+            background-size: cover;
+        }
+        .loginDiv{
+            /* background-color: aliceblue; */
+            padding: 20px;
+            border-radius: 10px;
+            width: 82%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.266);
+            margin-top: 30%;
+        }
+/* 
+        input{
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #211f1f;
+            border-radius: 5px;
+        } */
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+            border: none;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: white;
+            /* border-radius: 5px; */
+            background: transparent;
+            color: white;
+        }
+        input:focus{
+            background-color: rgba(0, 0, 0, 0.433);
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+
+        .button-64 {
+            align-items: center;
+            background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+            border: 0;
+            border-radius: 8px;
+            box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            display: flex;
+            font-family: Phantomsans, sans-serif;
+            font-size: 20px;
+            justify-content: center;
+            line-height: 1em;
+            max-width: 100%;
+            min-width: 140px;
+            padding: 3px;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .button-64:active,
+        .button-64:hover {
+            outline: 0;
+        }
+
+        .button-64 span {
+            background-color: rgb(5, 6, 45);
+            padding: 8px 24px;
+            border-radius: 6px;
+            width: 100%;
+            height: 100%;
+            transition: 300ms;
+        }
+
+        .button-64:hover span {
+            background: none;
+        }
+
+        @media (min-width: 768px) {
+        .button-64 {
+                font-size: 15px;
+                min-width: 100%;
+            }
+        }
+
+        #content{
+            font-family: Arial;
+            font-size: 12vh;
+            color: white;
+            margin-top: 16vh;
+            margin-left: 10vh;
+        }
+
+        #content1 {
+            font-family: Arial;
+            font-size: 2vh;
+            color: white;
+            margin-top: -12vh;
+            margin-left: 33vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="left">
+
+            <p id="content">#Classroom</p>
+            <p id="content1">Think beyond Classroom</p>
+
+        </div>
+        <div class="right">
+
+            <div class="loginform">
+                <form class="loginDiv">
+                    <input type="email" name="email" id="email"><br>
+                    <input type="password" name="password" id="password"><br>
+                    <!-- <button type="submit">Login</button> -->
+
+                    <button class="button-64" role="button"><span class="text">Login</span></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="circle"></div> -->
+</body>
+</html>
